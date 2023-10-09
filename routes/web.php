@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\ProductController::class, 'product'])->name('product');
 Route::post('/add-product', [App\Http\Controllers\ProductController::class, 'addProduct'])->name('add.product');
 Route::post('/update-product', [App\Http\Controllers\ProductController::class, 'updateProduct'])->name('update.product');
+Route::post('/delete-product', [App\Http\Controllers\ProductController::class, 'deleteProduct'])->name('delete.product');
+Route::get('/search-product', [App\Http\Controllers\ProductController::class, 'searchProduct'])->name('search.product');
